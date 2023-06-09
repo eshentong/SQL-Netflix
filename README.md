@@ -1,7 +1,5 @@
 <h1>Analytics Project #1</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
-
 <h2>Description</h2>
 This project utilizes Netflix data which includes country, genre, type, year and directors to dive into Netflix's selection of media. Using R, SQL and Excel, I was able to wrangle and manipulate and data, and visualize it by type, countries, year, genre and more.
 <br />
