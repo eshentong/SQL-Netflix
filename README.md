@@ -18,8 +18,8 @@ This project utilizes Netflix data which includes country, genre, type, year and
 
 <h2>Insights Display:</h2>
 
-<h3 align="left">
-Netflix media by type </h3> <br/>
+<h4 align="left">
+Netflix media by type </h4>
 <img src="https://imgtr.ee/images/2023/06/08/DQGhb.png" height="80%" width="80%" alt="DQGhb.png" border="0" />
 
 <p align=left> As shown above, more than 96% of Netflix's media is made up by movies. While TV only makes up less than 4% of the total media, its individual length is much longer than its movie counterpart. Hence, even though movies make up most of the media type, the screen time of each type is unknown. </p>
