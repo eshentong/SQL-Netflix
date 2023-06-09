@@ -14,7 +14,7 @@ This project utilizes Netflix data which includes country, genre, type, year and
 
 <h2>Environments Used </h2>
 
-- <b>Macbook 13</b> (21H2)
+- <b>Macbook 13</b>
 
 <h2>Insights Display:</h2>
 
