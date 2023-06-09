@@ -22,11 +22,13 @@ Netflix media by type </h4>
 
 <p align=left> As shown above, more than 96% of Netflix's media is made up by movies. While TV only makes up less than 4% of the total media, its individual length is much longer than its movie counterpart. Hence, even though movies make up most of the media type, the screen time of each type is unknown. </p>
 <br />
+
+<h4 align="left">
+Netflix media by type & duration </h4>
+<img src='https://i.postimg.cc/nLK8dMLN/By-Type-Duration.png' height="80%" width="80%" border='0' alt='By-Type-Duration'/>
+<p align=left> Like previously mentioned, the number of movies and TV shows can't accurately represent the Netflix database as TV shows are much longer than movies. Hence, after converting "Season" to "min", we find that TV shows actually make up about 1/3 of Netflix's total contents. (Here we assume 1 season = 12 episodes, and 1 episode = 55 minutes according to thrillist.com.) </p>
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
+
 Enter the number of passes: <br/>
 <img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
