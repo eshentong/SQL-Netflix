@@ -1,7 +1,3 @@
-mysql> UPDATE TABLE netflix_data
-    -> SET duration=CONCAT(SUBSTRING_INDEX(duration,' ',1)*12*55,' min')
-    -> WHERE duration LIKE '%Season%';
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE netflix_data
 SET duration=CONCAT(SUBSTRING_INDEX(duration,' ',1)*12*55,' m' at line 1
 mysql> UPDATE netflix_data
     -> SET duration=CONCAT(SUBSTRING_INDEX(duration,' ',1)*12*55,' min')
