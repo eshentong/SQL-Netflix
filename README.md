@@ -35,7 +35,7 @@ This project utilizes Netflix data which includes country, genre, type, year and
 
 
 <h2>4. SQL Codes Walk-through</h2>
-<pre><code class="language-sql">
+<pre><code class="language-sql"><p style="font-size: 8px;">
 mysql> UPDATE netflix_data
     -> SET duration=CONCAT(SUBSTRING_INDEX(duration,' ',1)*12*55,' min')
     -> WHERE duration LIKE '%Season%';
@@ -54,7 +54,7 @@ mysql> SELECT* FROM netflix_data
 | s8      | Movie   | Sankofa                          | Haile Gerima    | United States | 1993 | TV-MA  | 125 min  | Dramas, Independent Movies, International Movies              |
 +---------+---------+----------------------------------+-----------------+---------------+------+--------+----------+---------------------------------------------------------------+
 5 rows in set (0.01 sec);
-</code></pre>
+</p></code></pre>
 
 
 
