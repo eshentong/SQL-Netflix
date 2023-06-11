@@ -29,9 +29,8 @@ This project utilizes Netflix data which includes country, genre, type, year and
 
 <h4 align="left">
  -Netflix media by country & year</h4>
-<img src="https://imgtr.ee/images/2023/06/09/Dc8KJ.png" alt="Dc8KJ.png" border="0" />
-<br />
 
+<script src= "https://raw.githubusercontent.com/eshentong/AnalyticsProject-1/main/output.sql"></script>
 <!--
  ```diff
 - text in red
