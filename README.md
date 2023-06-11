@@ -31,8 +31,10 @@ This project utilizes Netflix data which includes country, genre, type, year and
  -Netflix media by country & year</h4>
  <img src="https://imgtr.ee/images/2023/06/11/Kg1TV.png" alt="Kg1TV.png" border="0" />
  <p align=left> When looking at the data by counntries, we can see that the U.S., India and the U.K. are the top three countries for most media output on Netflix.</p>
+<br/>
 
 
+<h2>4. SQL Codes Walk-through</h2>
 <pre><code class="language-sql">
 mysql> UPDATE netflix_data
     -> SET duration=CONCAT(SUBSTRING_INDEX(duration,' ',1)*12*55,' min')
