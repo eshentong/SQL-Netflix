@@ -29,7 +29,8 @@ This project utilizes Netflix data which includes country, genre, type, year and
 
 <h4 align="left">
  -Netflix media by country & year</h4>
- 
+ <img src="https://imgtr.ee/images/2023/06/11/Kg1TV.png" alt="Kg1TV.png" border="0" />
+ <p align=left> When looking at the data by counntries, we can see that the U.S., India and the U.K. are the top three countries for most media output on Netflix.</p>
 
 
 <pre><code class="language-sql">
