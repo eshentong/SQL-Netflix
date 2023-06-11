@@ -1,4 +1,3 @@
-SET duration=CONCAT(SUBSTRING_INDEX(duration,' ',1)*12*55,' m' at line 1
 mysql> UPDATE netflix_data
     -> SET duration=CONCAT(SUBSTRING_INDEX(duration,' ',1)*12*55,' min')
     -> WHERE duration LIKE '%Season%';
