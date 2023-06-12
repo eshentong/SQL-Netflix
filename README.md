@@ -40,7 +40,7 @@ When looking at countries' media output by decades, Netflix has media from as ol
 
 
 <h2>4. SQL Codes Walk-through</h2>
-<p align="left"> After uploading the raw CSV file to MySQL, I realized that there were two issues: 1. There were null values 2. The unit in 'duration' column weren't unified. <br/>
+<p align="left"> After uploading the raw CSV file to MySQL, I realized that there were two issues: 1. There were null values 2. The units in 'duration' column weren't unified. <br/>
  Hence, I wrangled the data through dropping null values and unifying units by updating "season" to "min" :</p><br/>
  
 <pre><code class="language-sql"><p style="font-size: 8px;">
