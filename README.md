@@ -8,7 +8,7 @@
 <br />
 
 <h2>1. Description</h2>
-This project utilizes Netflix data which includes country, genre, type, year and directors to dive into Netflix's selection of media. Using R, SQL and Excel, I was able to wrangle and manipulate the data, and visualize it by type, countries, year, genre and more. Due to the database not containing any consumer data, this insights will mainly address movie lovers and streaming service competitors for Netflix's internal content evaluation.<br />
+This project utilizes Netflix data which includes country, genre, type, year and directors to dive into Netflix's selection of media. Using R, SQL and Excel, I was able to wrangle and manipulate the data, and visualize it by type, countries, year, genre and more. Due to the database not containing any consumer data, this insights will primarily cater to movie lovers and streaming service competitors for Netflix's content evaluation purpose.<br />
 <br />
 
 <h2>2. Languages and Environment Used</h2>
