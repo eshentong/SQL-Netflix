@@ -39,7 +39,8 @@ When looking at countries' media output by decades, Netflix has media from as ol
 
 <h2>4. SQL Codes Walk-through</h2>
 <p align="left"> After uploading the raw CSV file to MySQL, I realized that there were two issues: 1. There were null values 2. The unit in 'duration' column weren't unified. <br/>
- Hence, I wrangled the data through dropping null values and unifying units by updating "season" to "min" : 
+ Hence, I wrangled the data through dropping null values and unifying units by updating "season" to "min" :</p><br/>
+ 
 <pre><code class="language-sql"><p style="font-size: 8px;">
 mysql> UPDATE netflix_data
     -> SET duration=CONCAT(SUBSTRING_INDEX(duration,' ',1)*12*55,' min')
@@ -59,9 +60,11 @@ mysql> SELECT* FROM netflix_data
 | s8      | Movie   | Sankofa                          | Haile Gerima    | United States | 1993 | TV-MA  | 125 min  | Dramas, Independent Movies, International Movies              |
 +---------+---------+----------------------------------+-----------------+---------------+------+--------+----------+---------------------------------------------------------------+
 5 rows in set (0.01 sec);
-</p></code></pre>
+</p></code></pre><br/>
 <br/>
 
+<p align="left"> After cleaning the table, there are nine columns for analysis: show_id,type,title, director,country,year,rating,duration and genre.
+</p>
 <pre><code class="language-sql"><p style="font-size: 8px;">
 mysql> SELECT genre,
     ->     SUM(CASE WHEN year >= 1940 AND year < 1950 THEN 1 ELSE 0 END) AS '1940s_count',
