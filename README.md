@@ -8,7 +8,7 @@
 <br />
 
 <h2>1. Description</h2>
-This project utilizes Netflix data which includes country, genre, type, year and directors to dive into Netflix's selection of media. Using R, SQL and Excel, I was able to wrangle and manipulate and data, and visualize it by type, countries, year, genre and more.<br />
+This project utilizes Netflix data which includes country, genre, type, year and directors to dive into Netflix's selection of media. Using R, SQL and Excel, I was able to wrangle and manipulate the data, and visualize it by type, countries, year, genre and more. Due to the database not containing any consumer data, this insights will mainly address movie lovers and streaming service competitors for Netflix's internal content evaluation.<br />
 <br />
 
 <h2>2. Languages and Environment Used</h2>
@@ -63,7 +63,7 @@ mysql> SELECT* FROM netflix_data
 </p></code></pre><br/>
 <br/>
 
-<p align="left"> After cleaning the table, there are nine columns for analysis: show_id,type,title, director,country,year,rating,duration and genre.
+<p align="left"> After cleansing the table, there are nine columns for analysis: show_id,type,title, director,country,year,rating,duration and genre.
 </p>
 <pre><code class="language-sql"><p style="font-size: 8px;">
 mysql> SELECT genre,
