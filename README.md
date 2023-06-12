@@ -30,7 +30,10 @@ This project utilizes Netflix data which includes country, genre, type, year and
 <h4 align="left">
  -Netflix media by country & year</h4>
  <img src="https://imgtr.ee/images/2023/06/11/Kg1TV.png" alt="Kg1TV.png" border="0" />
- <p align=left> When looking at the data by counntries, we can see that the U.S., India and the U.K. are the top three countries for most media output on Netflix.</p>
+ <p align=left> When looking at the data by counntries, we can see that the U.S., India and the U.K. are the top three countries for most media output on Netflix. It is worth noting that the U.S., U.K. and Spain had most TV shows output on Netflix, while India has a relatively heavy-up on movies. <br/>
+
+When looking at countries' media output by decades, Netflix has media from as old as the 1940s for movies such as "Prelude to War". But most of the Netflix media were made in 2010s, followed by recent (2020 or after). 
+</p>
 <br/>
 
 
@@ -55,10 +58,33 @@ mysql> SELECT* FROM netflix_data
 +---------+---------+----------------------------------+-----------------+---------------+------+--------+----------+---------------------------------------------------------------+
 5 rows in set (0.01 sec);
 </p></code></pre>
+<br/>
 
-
-
-
+<pre><code class="language-sql"><p style="font-size: 8px;">
+mysql> SELECT genre,
+    ->     SUM(CASE WHEN year >= 1940 AND year < 1950 THEN 1 ELSE 0 END) AS '1940s_count',
+    ->     SUM(CASE WHEN year >= 1950 AND year < 1960 THEN 1 ELSE 0 END) AS '1950s_count',
+    ->     SUM(CASE WHEN year >= 1960 AND year < 1970 THEN 1 ELSE 0 END) AS '1960s_count',
+    ->     SUM(CASE WHEN year >= 1970 AND year < 1980 THEN 1 ELSE 0 END) AS '1970s_count',
+    ->     SUM(CASE WHEN year >= 1980 AND year < 1990 THEN 1 ELSE 0 END) AS '1980s_count',
+    ->     SUM(CASE WHEN year >= 1990 AND year < 2000 THEN 1 ELSE 0 END) AS '1990s_count',
+    ->     SUM(CASE WHEN year >= 2000 AND year < 2010 THEN 1 ELSE 0 END) AS '2000s_count',
+    ->     SUM(CASE WHEN year >= 2010 AND year < 2020 THEN 1 ELSE 0 END) AS '2010s_count',
+    ->     SUM(CASE WHEN year >= 2020 THEN 1 ELSE 0 END) AS 'recent_count'
+    -> FROM netflix_duplicate
+    -> GROUP BY genre
+    -> HAVING (SUM(CASE WHEN year >= 1940 AND year < 1950 THEN 1 ELSE 0 END) +
+    ->         SUM(CASE WHEN year >= 1950 AND year < 1960 THEN 1 ELSE 0 END) +
+    ->         SUM(CASE WHEN year >= 1960 AND year < 1970 THEN 1 ELSE 0 END) +
+    ->         SUM(CASE WHEN year >= 1970 AND year < 1980 THEN 1 ELSE 0 END) +
+    ->         SUM(CASE WHEN year >= 1980 AND year < 1990 THEN 1 ELSE 0 END) +
+    ->         SUM(CASE WHEN year >= 1990 AND year < 2000 THEN 1 ELSE 0 END) +
+    ->         SUM(CASE WHEN year >= 2000 AND year < 2010 THEN 1 ELSE 0 END) +
+    ->         SUM(CASE WHEN year >= 2010 AND year < 2020 THEN 1 ELSE 0 END) +
+    ->         SUM(CASE WHEN year >= 2020 THEN 1 ELSE 0 END)) >= 5
+    -> ORDER BY SUM(year) DESC;
+</p></code></pre>
+<p align="Left"> Here I pulled genre information by decade and excluded genres that contains 5 or less movies or TV shows across all decades. The information is pulled in a descending order through the sum of media. </p>
 <!--
  ```diff
 - text in red
