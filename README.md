@@ -14,8 +14,8 @@ Due to the database not containing any consumer data, this insights will primari
 <br />
 
 <h2>2. Languages and Environment Used</h2>
-- SQL - 95%<br/> 
-- R -5%<br/>
+- MySQL - 95%<br/> 
+- R Studio -5%<br/>
 - Environment used: Macbook 13<br />
 <br/>
 
