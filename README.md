@@ -38,6 +38,11 @@ When looking at countries' media output by decades, Netflix has media from as ol
 </p>
 <br/>
 
+<h4 align="left">
+ -Netflix media genre by decade</h4>
+<a href='https://postimg.cc/CnRW18mt' target='_blank'><img src='https://i.postimg.cc/gjsdgqRY/genre-by-decade.png' border='0' alt='genre-by-decade'/></a>
+
+<br/>
 
 <h2>4. SQL Codes Walk-through</h2>
 <p align="left"> After uploading the raw CSV file to MySQL, I realized that there were two issues: 1. There were null values 2. The units in 'duration' column weren't unified. <br/>
