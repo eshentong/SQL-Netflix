@@ -31,7 +31,7 @@ Due to the database not containing any consumer data, this insights will primari
 
 <h4 align="left">
  -Netflix media by country & year</h4>
- <img src="https://imgtr.ee/images/2023/06/11/Kg1TV.png" alt="Kg1TV.png" border="0" />
+ <a href='https://postimg.cc/jDvQgSH3' target='_blank'><img src='https://i.postimg.cc/43RL3KmG/by-countries.png' border='0' alt='by-countries'/></a>
  <p align=left> When looking at the data by counntries, we can see that the U.S., India and the U.K. are the top three countries for most media output on Netflix. It is worth noting that the U.S., U.K. and Spain had most TV shows output on Netflix, while India has a relatively heavy-up on movies. <br/>
 
 When looking at countries' media output by decades, Netflix has media from as old as the 1940s for movies such as "Prelude to War". But most of the Netflix media were made in 2010s, followed by recent (2020 or after). 
