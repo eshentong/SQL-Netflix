@@ -41,7 +41,13 @@ When looking at countries' media output by decades, Netflix has media from as ol
 <h4 align="left">
  -Netflix media genre by decade</h4>
 <a href='https://postimg.cc/CnRW18mt' target='_blank'><img src='https://i.postimg.cc/gjsdgqRY/genre-by-decade.png' border='0' alt='genre-by-decade'/></a>
-<p align=left> When ordering the genres in a descending order, we see that 'Dramas,International Movie', 'Documentaries', 'Stand-Up Comedy', 'Comedies, Dramas, International Movies' and 'Dramas, Independent Movies, International Movies' are the most popular five genres at all times on Netflix.
+<p align=left> When ordering the genres in a descending order, we know that: <br/>
+ 'Dramas,International Movie', <br/>
+ 'Documentaries',  <br/>
+ 'Stand-Up Comedy',  <br/>
+ 'Comedies, Dramas, International Movies',  <br/>
+ 'Dramas, Independent Movies, International Movies' <br/> 
+ are the most popular five genres at all times on Netflix. 
  
  The pie charts above display the top five genres in each decade, and the "most popular genres all times" are highlighted in red.
 
