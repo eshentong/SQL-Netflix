@@ -56,7 +56,7 @@ When looking at countries' media output by decades, Netflix has media from as ol
 
 <h4 align="left">
  -Netflix media genre by ratings</h4>
-<a href='https://postimg.cc/PNck880j' target='_blank'><img src='https://i.postimg.cc/KvccwPNR/by-Ratings.png' border='0' alt='by-Ratings'/></a>
+<a href='https://postimg.cc/Z0MtGyLQ' target='_blank'><img src='https://i.postimg.cc/ncHFQ49n/by-Ratings.png' border='0' alt='by-Ratings'/></a>
 
 
 <br/>
