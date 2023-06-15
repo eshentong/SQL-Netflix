@@ -41,34 +41,32 @@ Due to the database not containing any consumer data, this insights will primari
 <br />
 <br />
 
-
-<a href='https://postimg.cc/CnRW18mt' target='_blank'><img src='https://i.postimg.cc/gjsdgqRY/genre-by-decade.png' border='0' alt='genre-by-decade'/></a>
-<h4 align="left"> - Netflix media genre by decade: </h4>
-<p align=left> When ordering the genres in a descending order, we know that these are the most popular five genres at all times on Netflix:  <br/>
- 
- - 'Dramas,International Movie', 'Documentaries', 'Stand-Up Comedy', 'Comedies, Dramas, International Movies', 'Dramas, Independent Movies, International Movies' 
- 
-The pie charts above display the top five genres in each decade, and the "most popular genres all times" are highlighted in red. As seen above, "doumentaries" started to popularize since the 40s, while genres like "stand up comedies" did not stand out till recent years (past 2020). 
- 
- It is also worth noting here that, due to the amounts of recent medias being larger than their past counterparts, we tend to see the "all time popular movies" being skewed by recent decades data. </p><hr>
+<div class="section3">
+  <a href='https://postimg.cc/CnRW18mt' target='_blank'><img src='https://i.postimg.cc/gjsdgqRY/genre-by-decade.png' border='0' alt='genre-by-decade'/></a>
+  <h4 align="left"> - Netflix media genre by decade: </h4>
+  <p align=left> When ordering the genres in a descending order, we know that these are the most popular five genres at all times on Netflix: </p>
+  <p> - 'Dramas,International Movie', 'Documentaries', 'Stand-Up Comedy', 'Comedies, Dramas, International Movies', 'Dramas, Independent Movies, International Movies'</p> 
+  <p>The pie charts above display the top five genres in each decade, and the "most popular genres all times" are highlighted in red. As seen above, "doumentaries" started to popularize since the 40s, while genres like "stand up comedies" did not stand out till recent years (past 2020). </p>
+ <p>It is also worth noting here that, due to the amounts of recent medias being larger than their past counterparts, we tend to see the "all time popular movies" being skewed by recent decades data. </p><hr>
+</div>
 <br/>
 <br/>
 
-
-<a href='https://postimg.cc/Z0MtGyLQ' target='_blank'><img src='https://i.postimg.cc/ncHFQ49n/by-Ratings.png' border='0' alt='by-Ratings'/></a>
-<h4 align="left"> - Netflix media genre by ratings: </h4>
+<div class="section4">
+  <a href='https://postimg.cc/Z0MtGyLQ' target='_blank'><img src='https://i.postimg.cc/ncHFQ49n/by-Ratings.png' border='0' alt='by-Ratings'/></a>
+  <h4 align="left"> - Netflix media genre by ratings: </h4>
+<hr>
+</div>
 <br/>
-<br/><hr>
+<br/>
 
 
 </br>
 <h2>4. SQL Codes Walk-through</h2>
-<p align="left"> After uploading the raw CSV file to MySQL, I realized that there were two issues: 1. There were null values 2. The units in 'duration' column weren't unified. <br/>
+<p align="left"> After uploading the raw CSV file to MySQL, I realized that there were two issues: </br>
+    1. There were null values 2. The units in 'duration' column weren't unified. <br/>
 Hence, I dropped the null values, after which, there are nine columns for analysis: show_id,type,title, director,country,year,rating,duration and genre.
 </p>
-
-<br/>
-<br/> 
 <pre><code class="language-sql"><p style="font-size: 7.5px;">
 mysql> UPDATE netflix_data
     -> SET duration=CONCAT(SUBSTRING_INDEX(duration,' ',1)*12*55,' min')
@@ -88,13 +86,13 @@ mysql> SELECT* FROM netflix_data
 | s8      | Movie   | Sankofa                          | Haile Gerima    | United States | 1993 | TV-MA  | 125 min  | Dramas, Independent Movies, International Movies              |
 +---------+---------+----------------------------------+-----------------+---------------+------+--------+----------+---------------------------------------------------------------+
 5 rows in set (0.01 sec);
-</p></code></pre><br/>
+</p></code></pre><hr>
 
 
 <br/>
 <br/>
 <p style=left-aligned> To unify the "duration" column, I then wrangled the data by using "substring()" and "concat()" functions to update "season" to "min": </p>
- 
+<hr>
  
 <br/>
 <br/>
@@ -122,7 +120,7 @@ mysql> SELECT genre,
     ->         SUM(CASE WHEN year >= 2010 AND year < 2020 THEN 1 ELSE 0 END) +
     ->         SUM(CASE WHEN year >= 2020 THEN 1 ELSE 0 END)) >= 5
     -> ORDER BY SUM(year) DESC;
-</p></code></pre>
+</p></code></pre><hr>
 
 
 </br>
