@@ -52,10 +52,15 @@ When looking at countries' media output by decades, Netflix has media from as ol
  The pie charts above display the top five genres in each decade, and the "most popular genres all times" are highlighted in red. As seen above, "doumentaries" started to popularize since the 40s, while genres like "stand up comedies" did not stand out till recent years (past 2020). 
  
  It is also worth noting here that, due to the amounts of recent medias being larger than their past counterparts, we tend to see the "all time popular movies" being skewed by recent decades data. </p>
+<br/>
+
+<h4 align="left">
+ -Netflix media genre by ratings</h4>
+<a href='https://postimg.cc/PNck880j' target='_blank'><img src='https://i.postimg.cc/KvccwPNR/by-Ratings.png' border='0' alt='by-Ratings'/></a>
 
 
 <br/>
-
+<br/>
 <h2>4. SQL Codes Walk-through</h2>
 <p align="left"> After uploading the raw CSV file to MySQL, I realized that there were two issues: 1. There were null values 2. The units in 'duration' column weren't unified. <br/>
  Hence, I wrangled the data through dropping null values and unifying units by updating "season" to "min" :</p><br/>
