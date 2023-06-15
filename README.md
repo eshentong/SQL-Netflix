@@ -49,7 +49,9 @@ When looking at countries' media output by decades, Netflix has media from as ol
  'Dramas, Independent Movies, International Movies' <br/> 
  are the most popular five genres at all times on Netflix. 
  
- The pie charts above display the top five genres in each decade, and the "most popular genres all times" are highlighted in red.
+ The pie charts above display the top five genres in each decade, and the "most popular genres all times" are highlighted in red. As seen above, "doumentaries" started to popularize since the 40s, while genres like "stand up comedies" did not stand out till recent years (past 2020). 
+ 
+ It is also worth noting here that, due to the amounts of recent medias being larger than their past counterparts, we tend to see the "all time popular movies" being skewed by recent decades data. 
 
 
 <br/>
