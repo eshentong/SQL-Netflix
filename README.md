@@ -91,8 +91,15 @@ mysql> SELECT* FROM netflix_data
 
 <br/>
 <br/>
-<p style=left-aligned> To unify the "duration" column, I then wrangled the data by using "substring()" and "concat()" functions to update "season" to "min": </p>
-<hr>
+  <p style=left-aligned> To unify the "duration" column, I then wrangled the data by using "substring()" and "concat()" functions to update "season" to "min": </p>
+  <pre><code class="language-sql"><p="font-size: 7.5px;">
+  CREATE TABLE netflix_duplicate AS
+    SELECT * FROM netflix_data;
+
+  UPDATE netflix_duplicate
+  SET duration= CONCAT(SUBSTRING_INDEX(duration,' ',1)*12*55,' min')
+  WHERE duration LIKE '%Season%';
+  </p></code></pre><hr>
  
 <br/>
 <br/>
