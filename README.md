@@ -63,19 +63,20 @@ Due to the database not containing any consumer data, this insights will primari
 
 </br>
 <h2>4. SQL Codes Walk-through</h2>
-<p align="left"> After uploading the raw CSV file to MySQL, I realized that there were two issues: </br>
-    1. There were null values 2. The units in 'duration' column weren't unified. <br/>
-Hence, I dropped the null values, after which, there are nine columns for analysis: show_id,type,title, director,country,year,rating,duration and genre.
-</p>
-<pre><code class="language-sql"><p style="font-size: 7.5px;">
-mysql> UPDATE netflix_data
-    -> SET duration=CONCAT(SUBSTRING_INDEX(duration,' ',1)*12*55,' min')
-    -> WHERE duration LIKE '%Season%';
-Query OK, 219 rows affected (0.22 sec)
-Rows matched: 219  Changed: 219  Warnings: 0
 
-mysql> SELECT* FROM netflix_data
-    -> LIMIT 5;
+  <p align="left"> After uploading the raw CSV file to MySQL, I realized that there were two issues: </p>
+  <p>1. There were null values  2. The units in 'duration' column weren't unified. </p>
+  <p> Hence, I dropped the null values, after which, there are nine columns for analysis: show_id,type,title, director,country,year,rating,duration and genre.</p>
+  
+  <pre><code class="language-sql" style="color: blue;">><p style="font-size:4.5px;">
+  mysql&gt; UPDATE netflix_data
+        -&gt; SET duration=CONCAT(SUBSTRING_INDEX(duration,' ',1)*12*55,' min')
+        -&gt; WHERE duration LIKE '%Season%';
+  Query OK, 219 rows affected (0.22 sec)
+  Rows matched: 219  Changed: 219  Warnings: 0
+
+  mysql> SELECT* FROM netflix_data
+      -> LIMIT 5;
 +---------+---------+----------------------------------+-----------------+---------------+------+--------+----------+---------------------------------------------------------------+
 | show_id | type    | title                            | director        | country       | year | rating | duration | genre                                                         |
 +---------+---------+----------------------------------+-----------------+---------------+------+--------+----------+---------------------------------------------------------------+
@@ -85,27 +86,25 @@ mysql> SELECT* FROM netflix_data
 | s14     | Movie   | Confessions of an Invisible Girl | Bruno Garotti   | Brazil        | 2021 | TV-PG  | 91 min   | Children & Family Movies, Comedies                            |
 | s8      | Movie   | Sankofa                          | Haile Gerima    | United States | 1993 | TV-MA  | 125 min  | Dramas, Independent Movies, International Movies              |
 +---------+---------+----------------------------------+-----------------+---------------+------+--------+----------+---------------------------------------------------------------+
-5 rows in set (0.01 sec);
-</p></code></pre><hr>
+  5 rows in set (0.01 sec);
+  </p></code></pre><hr>
 
 
 <br/>
 <br/>
   <p style=left-aligned> To unify the "duration" column, I then wrangled the data by using "substring()" and "concat()" functions to update "season" to "min": </p>
-  <pre><code class="language-sql"><p="font-size: 7.5px;">
-  CREATE TABLE netflix_duplicate AS
-    SELECT * FROM netflix_data;
-
-  UPDATE netflix_duplicate
-  SET duration= CONCAT(SUBSTRING_INDEX(duration,' ',1)*12*55,' min')
-  WHERE duration LIKE '%Season%';
+  <pre><code class="language-sql"><p="font-size:4.5px; color: blue;x;">
+UPDATE netflix_duplicate
+SET duration= CONCAT(SUBSTRING_INDEX(duration,' ',1)*12*55,' min')
+WHERE duration LIKE '%Season%';
   </p></code></pre><hr>
+ 
  
 <br/>
 <br/>
-<p align="Left"> Using the case statement, I pulled genre information by decade and excluded genres that contains 5 or less movies or TV shows across all decades. The information is pulled in a descending order through the sum of media. </p>
-<pre><code class="language-sql"><p style="font-size: 7.5px;">
-mysql> SELECT genre,
+  <p align="Left"> Using the case statement, I pulled genre information by decade and excluded genres that contains 5 or less movies or TV shows across all decades. The information is pulled in a descending order through the sum of media. </p>
+  <pre><code class="language-sql"><p style="font-size:4.5px; color: blue;;">
+  mysql> SELECT genre,
     ->     SUM(CASE WHEN year >= 1940 AND year < 1950 THEN 1 ELSE 0 END) AS '1940s_count',
     ->     SUM(CASE WHEN year >= 1950 AND year < 1960 THEN 1 ELSE 0 END) AS '1950s_count',
     ->     SUM(CASE WHEN year >= 1960 AND year < 1970 THEN 1 ELSE 0 END) AS '1960s_count',
@@ -127,18 +126,18 @@ mysql> SELECT genre,
     ->         SUM(CASE WHEN year >= 2010 AND year < 2020 THEN 1 ELSE 0 END) +
     ->         SUM(CASE WHEN year >= 2020 THEN 1 ELSE 0 END)) >= 5
     -> ORDER BY SUM(year) DESC;
-</p></code></pre><hr>
+  </p></code></pre><hr>
 
 
 </br>
 </br>
-<pre><code class="langugae-sql"><p style="font-size:7.5px;">
-CREATE TABLE netflix_rating AS(
-SELECT DISTINCT rating,counts,
-ROW_NUMBER() OVER(ORDER BY counts DESC) AS ranking
-  FROM(
-    SELECT rating, COUNT(rating) AS counts
-    FROM netflix_duplicate
-    GROUP BY rating
-  ) AS subquery);
-</p></code></pre><br/>
+  <pre><code class="langugae-sql"><p style="font-size:4.5px; color: blue;">
+  CREATE TABLE netflix_rating AS(
+  SELECT DISTINCT rating,counts,
+  ROW_NUMBER() OVER(ORDER BY counts DESC) AS ranking
+    FROM(
+      SELECT rating, COUNT(rating) AS counts
+      FROM netflix_duplicate
+      GROUP BY rating
+      ) AS subquery);
+  </p></code></pre><br/>
