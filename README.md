@@ -53,7 +53,7 @@ Due to the database not containing any consumer data, this insights will primari
 <br/>
 
 <div class="section4">
-  <a href='https://postimg.cc/xNcgWzxb' target='_blank'><img src='https://i.postimg.cc/cCcjt7fT/by-rating.jpg' border='0' width=800px alt='by-rating'/></a>
+  <a href='https://postimg.cc/TpKMMkph' target='_blank'><img src='https://i.postimg.cc/kXcnSzCN/by-rating.jpg' border='0' width=800px alt='by-rating'/></a>
   <h4 align="left"> - Netflix media genre by ratings: </h4>
 <hr>
 </div>
