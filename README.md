@@ -23,7 +23,7 @@ Due to the database not containing any consumer data, this insights will primari
 <h2>3. Insights Display:</h2>
 
 <div class="section1">
-  <img src="https://imgtr.ee/images/2023/06/09/Koedz.png" alt="Koedz.png" border="0" width=800px />
+  <a href='https://postimg.cc/5HBr3LT4' target='_blank'><img src='https://i.postimg.cc/43qTX119/by-number-VSlength.jpg' border='0' width=800px alt='by-number-VSlength'/></a>
   <h4> - Netflix media & media length by type: </h4>
   <p>As shown above, more than 96% of Netflix's media is made up of movies. While TV only makes up less than 4% of the total media, its individual length is much longer than its movie counterpart.</p>
   <p>When comparing the two types by length, the media type of TV makes up about 30% of the total media content length, which shows that it is a very important media type for Netflix. In this chart, I converted "Season" to "min" to match the movie length. (Here we assume 1 season = 12 episodes, and 1 episode = 55 minutes according to thrillist.com.)</p><hr>
@@ -33,7 +33,7 @@ Due to the database not containing any consumer data, this insights will primari
 
 
  <div class="section2">
-  <a href='https://postimg.cc/jDvQgSH3' target='_blank'><img src='https://i.postimg.cc/43RL3KmG/by-countries.png' border='0' width=800px alt='by-countries'/></a>
+  <a href='https://postimg.cc/Z9S7C0R1' target='_blank'><img src='https://i.postimg.cc/Zq91sdhK/by-country.jpg' border='0' width=800px alt='by-country'/></a>
   <h4> - Netflix media by country & year: </h4>
   <p>When looking at the data by countries, we can see that the U.S., India, and the U.K. are the top three countries for the most media output on Netflix. It is worth noting that the U.S., U.K., and Spain had the most TV shows output on Netflix, while India has a relatively heavy-up on movies.</p>
   <p>When looking at countries' media output by decades, Netflix has media from as old as the 1940s for movies such as "Prelude to War". But most of the Netflix media were made in the 2010s, followed by recent (2020 or after).</p><hr>
@@ -42,7 +42,7 @@ Due to the database not containing any consumer data, this insights will primari
 <br />
 
 <div class="section3">
-  <a href='https://postimg.cc/CnRW18mt' target='_blank'><img src='https://i.postimg.cc/gjsdgqRY/genre-by-decade.png' border='0' width=800px alt='genre-by-decade'/></a>
+  <a href='https://postimg.cc/V5CfcHx5' target='_blank'><img src='https://i.postimg.cc/sfnv7kKP/by-decade.jpg' border='0' width=800px alt='by-decade'/></a>
   <h4 align="left"> - Netflix media genre by decade: </h4>
   <p align=left> When ordering the genres in a descending order, we know that these are the most popular five genres at all times on Netflix: </p>
   <p> - 'Dramas,International Movie', 'Documentaries', 'Stand-Up Comedy', 'Comedies, Dramas, International Movies', 'Dramas, Independent Movies, International Movies'</p> 
@@ -53,14 +53,22 @@ Due to the database not containing any consumer data, this insights will primari
 <br/>
 
 <div class="section4">
-  <a href='https://postimg.cc/Z0MtGyLQ' target='_blank'><img src='https://i.postimg.cc/ncHFQ49n/by-Ratings.png' border='0' width=800px alt='by-Ratings'/></a>
+  <a href='https://postimg.cc/xNcgWzxb' target='_blank'><img src='https://i.postimg.cc/cCcjt7fT/by-rating.jpg' border='0' width=800px alt='by-rating'/></a>
   <h4 align="left"> - Netflix media genre by ratings: </h4>
 <hr>
 </div>
 <br/>
 <br/>
 
+<div class="section4">
+  <a href='https://postimg.cc/ppzgswgY' target='_blank'><img src='https://i.postimg.cc/VLVmk1gT/data-viz.jpg' border='0' width=800px alt='data-viz'/></a>
+  <h4 align="left"> - Netflix media genre by director & by type: </h4>
+<hr>
+</div>
+<br/>
+<br/>
 
+  
 </br>
 <h2>4. SQL Codes Walk-through</h2>
 
