@@ -73,7 +73,6 @@ Due to the database not containing any consumer data, this insight will primaril
 <hr>
 
   
-</br>
 <h2>4. SQL Codes Walk-through</h2>
 
   <p> Process: </br>
