@@ -8,12 +8,12 @@
 <br /><hr>
 
 <h2>1. Description</h2>
-  <p>This project utilizes Netflix data which includes eight columns of show_id(index column), type, title, director, country, release_year, rating, duration, and listed_in. I broke down the eight variables into two categories of:</br>
+  <p>This project utilizes Netflix data which includes eight columns of categorical data: show_id(index column), type, title, director, country, release_year, rating, duration, and listed_in. I broke down the eight variables into two groups:</br>
 
-        - productions analysis (type, title, director, country, release year, duration, and listed_in)
         - audience analysis (type, country, rating, listed in)
+        - productions analysis (type, title, director, country, release year, duration, and listed_in)
         
-Due to the database not containing any consumer data, this insight will primarily cater to movie lovers and streaming service evaluation for Netflix's content evaluation purpose.</p>
+Due to the database not containing any numeric consumer data, this insight will primarily cater to movie lovers and streaming service evaluation for Netflix's content evaluation purpose.</p>
 <br />
 <br /><hr>
 
@@ -22,6 +22,34 @@ Due to the database not containing any consumer data, this insight will primaril
 - R Studio -5%<br/>
 - Environment used: Macbook 13<br />
 <br/><hr>
+
+
+<h2>3. Insights Display | Audience Analysis:</h2>
+<div class="section4">
+  <a href='https://postimg.cc/TpKMMkph' target='_blank'><img src='https://i.postimg.cc/kXcnSzCN/by-rating.jpg' border='0' width=800px alt='by-rating'/></a>
+  <h4 align="left"> - Netflix media genre by ratings: </h4>
+  <p align=left> The ordinal categorical data of ratings can be ordered from strictest to unlimited as shown above. We can see the percentage of each rating category accordingly in the stacked chart: more than 50% of Netflix's shows and movies are 18+ contents. Hence, it can be inferred that Netflix prioritizes its adult audiences. 
+</div>
+<br/>
+<br/>
+<hr>
+
+
+<div class="section3">
+  <a href='https://postimg.cc/V5CfcHx5' target='_blank'><img src='https://i.postimg.cc/sfnv7kKP/by-decade.jpg' border='0' width=800px alt='by-decade'/></a>
+  <h4 align="left"> - Netflix media genre by decade: </h4>
+  <p align=left> When ordering the genres in descending order, we know that these are the most popular five genres at all times on Netflix: </p>
+  <p> 1. Dramas, International Movie: such as 'The Dig' (2021) by Simon Stone. </br>
+      2. Documentaries: such as 'Kiss the Ground' (2020) by Joshua Tickell, Rebecca Harrel.</br>
+      3. Stand-Up Comedy: such as 'Ali Wong: Don Wong' (2022) by Ali Wong. </br>
+      4. Comedies, Dramas, International Movies: such as 'Mimi' (2021) by Laxman Utekar. </br>
+      5. Dramas, Independent Movies, International Movies: such as 'Atlantics' (2019) by Mati Diop. </p> 
+  
+  <p>The pie charts above display the top five genres in each decade, and the "most popular of all times" are highlighted in red. As seen above, "documentaries" started to popularize in the 40s, while genres like "stand-up comedies" did not stand out till recent years (past 2020). </p>
+ <p>It is also worth noting here that, due to the amounts of recent media being larger than their past counterparts, we tend to see the "all-time popular movies" being skewed by recent decades' data. </p><hr>
+</div>
+<br/>
+<br/>
 
 
 <h2>3. Insights Display | Production Analysis:</h2>
@@ -39,22 +67,13 @@ Due to the database not containing any consumer data, this insight will primaril
 <div class="section2">
   <a href='https://postimg.cc/Z9S7C0R1' target='_blank'><img src='https://i.postimg.cc/Zq91sdhK/by-country.jpg' border='0' width=800px alt='by-country'/></a>
     <h4> - Netflix media by country & year: </h4>
-    <p>When looking at the data by countries, we can see that the U.S., India, and the U.K. are the top three countries for the most media output on Netflix. It is worth noting that the U.S., U.K., and Spain had the most TV shows output on Netflix, while India has a relatively heavy-up on movies.</p>
-    <p>When looking at countries' media output by decades, Netflix has media from as old as the 1940s for movies such as "Prelude to War". But most of the Netflix media were made in the 2010s, followed by recent (2020 or after).</p><hr>
+    <p>When looking at the data by countries, we can see that the U.S., India, and the U.K. are the top three countries for the most media output on Netflix. It is worth noting that the U.S., U.K., and Spain had the most TV-show output on Netflix, while India has a relatively heavy-up on movies.</p>
+    <p> Most of the Netflix media was made in the 2010s, followed by recent (2020 or after).</p><hr>
 </div>
 <br />
 <br />
 
-<div class="section3">
-  <a href='https://postimg.cc/V5CfcHx5' target='_blank'><img src='https://i.postimg.cc/sfnv7kKP/by-decade.jpg' border='0' width=800px alt='by-decade'/></a>
-  <h4 align="left"> - Netflix media genre by decade: </h4>
-  <p align=left> When ordering the genres in a descending order, we know that these are the most popular five genres at all times on Netflix: </p>
-  <p> - 'Dramas,International Movie', 'Documentaries', 'Stand-Up Comedy', 'Comedies, Dramas, International Movies', 'Dramas, Independent Movies, International Movies'</p> 
-  <p>The pie charts above display the top five genres in each decade, and the "most popular genres all times" are highlighted in red. As seen above, "doumentaries" started to popularize since the 40s, while genres like "stand up comedies" did not stand out till recent years (past 2020). </p>
- <p>It is also worth noting here that, due to the amounts of recent medias being larger than their past counterparts, we tend to see the "all time popular movies" being skewed by recent decades data. </p><hr>
-</div>
-<br/>
-<br/>
+
 
 <div class="section4">
   <a href='https://postimg.cc/ppzgswgY' target='_blank'><img src='https://i.postimg.cc/VLVmk1gT/data-viz.jpg' border='0' width=800px alt='data-viz'/></a>
@@ -63,14 +82,6 @@ Due to the database not containing any consumer data, this insight will primaril
 </div>
 
 
-<h2>3. Insights Display | Audience Analysis:</h2>
-<div class="section4">
-  <a href='https://postimg.cc/TpKMMkph' target='_blank'><img src='https://i.postimg.cc/kXcnSzCN/by-rating.jpg' border='0' width=800px alt='by-rating'/></a>
-  <h4 align="left"> - Netflix media genre by ratings: </h4>
-</div>
-<br/>
-<br/>
-<hr>
 
   
 <h2>4. SQL Codes Walk-through</h2>
