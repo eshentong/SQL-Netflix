@@ -170,4 +170,4 @@ Due to the database not containing any numeric consumer data, this insight will 
       FROM netflix_duplicate
       GROUP BY rating
       ) AS subquery);
-  </p></code></pre><br/>
+  </p></code></pre>
