@@ -8,7 +8,19 @@
 <br /><hr>
 
 <h2>1. Description</h2>
-  <p>This project utilizes Netflix data which includes eight columns of categorical data: show_id(index column), type, title, director, country, release_year, rating, duration, and listed_in. I broke down the eight variables into two groups:</br>
+  <p>This project utilizes Netflix data which includes eight columns of categorical data: <br>
+     <br><strong> Show_id(index column):</strong>  Netflix's internal show id, not used in the projects
+     <br><strong> Type: </strong>  film or TV
+     <br><strong> Title: </strong>  title of each film/TV
+     <br><strong> Director: </strong>  director, producer names of each film/TV
+     <br><strong> Country: </strong>  country of origin of production
+     <br><strong> Release Year: </strong>  released year of each film/TV
+     <br><strong> Rating: </strong>  ratings for recommended audience age
+     <br><strong> Duration: </strong>  media durations in seasons or episodes for TVs, and minutes for movies
+     <br><strong> Listed In: </strong>  genres for each film/TV
+     
+   <br> I broke down the eight variables into two groups:</br></p>
+    
 
         - audience analysis (type, country, rating, listed in)
         - productions analysis (type, title, director, country, release year, duration, and listed_in)
@@ -146,6 +158,8 @@ Due to the database not containing any numeric consumer data, this insight will 
 </br>
 </br>
 
+
+  <p align="Left"> 4. Using window function, I pulled the unique ratings and their counts from the dataset, ranked in descending order. 
 
   <pre><code class="langugae-sql"><p style="font-size:4.5px; color: blue;">
   CREATE TABLE netflix_rating AS(
