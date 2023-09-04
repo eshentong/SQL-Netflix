@@ -1,4 +1,4 @@
-<h1>Analytics Project #1</h1>
+<h1>Netflix Categorical SQL Project</h1>
 
 <h2>Table of Contents</h2>
 1. Description<br/>
