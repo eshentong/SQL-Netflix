@@ -38,7 +38,7 @@ Due to the database not containing any numeric consumer data, this insight will 
 
 <h2>3. Insights Display | Audience Analysis:</h2>
 <div class="section4">
-  <a href='https://postimg.cc/TpKMMkph' target='_blank'><img src='https://i.postimg.cc/kXcnSzCN/by-rating.jpg' border='0' width=800px alt='by-rating'/></a>
+  <a href="https://yourimageshare.com/ib/PNWOTg1YGQ"><img src="https://yourimageshare.com/ib/PNWOTg1YGQ.webp" width=800px alt="by-ratings"></a>
   <h4 align="left"> - Netflix media genre by ratings: </h4>
   <p align=left> The ordinal categorical data of ratings can be ordered from strictest to unlimited as shown above. We can see the percentage of each rating category accordingly in the stacked chart: more than 50% of Netflix's shows and movies are 18+ contents. Hence, it can be inferred that Netflix prioritizes its adult audiences. 
 </div>
